@@ -15,8 +15,7 @@ html:
 	@echo "Building HTML version of MyST site..."
 	myst build --html
 
-clean:
+.PHONY: clean
 	@echo "Cleaning up generated files..."
+clean:
 	rm -rf _build
-	rm -rf figures
-	rm -rf audio
